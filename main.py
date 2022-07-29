@@ -5,7 +5,7 @@ from datetime import datetime
 from pprint import pprint as pp
 from bs4 import BeautifulSoup
 
-base_url = 'hhttps://www.r7.com/'
+base_url = 'https://g1.globo.com/'
             
 
 tz_WA = pytz.timezone('US/Pacific')
