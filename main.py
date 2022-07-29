@@ -38,5 +38,5 @@ headers = list(map(lambda x: x.text, headers[1:]))
 
 #print(headers)
 
-with open('data.data', 'w') as f:
+with open('data.jpg', 'w') as f:
     f.write('\n'.join(headers))
