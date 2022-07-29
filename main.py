@@ -5,8 +5,7 @@ from datetime import datetime
 from pprint import pprint as pp
 from bs4 import BeautifulSoup
 
-base_url = 'https://g1.globo.com/'
-            
+base_url = 'https://www.cnn.com/europe/live-news/russia-ukraine-war-news-{}-{}-{}{}/index.html'
 
 tz_WA = pytz.timezone('US/Pacific')
 datetime_WA = datetime.now(tz_WA)
@@ -41,4 +40,3 @@ headers = list(map(lambda x: x.text, headers[1:]))
 
 with open('data.data', 'w') as f:
     f.write('\n'.join(headers))
-
