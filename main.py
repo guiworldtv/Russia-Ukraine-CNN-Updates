@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 
 base_url = 'https://www.cnn.com/europe/live-news/russia-ukraine-war-news-{}-{}-{}{}/index.html'
 
-tz_WA = pytz.timezone('US/Pacific')
+tz_WA = pytz.timezone('America/Sao_Paulo')
 datetime_WA = datetime.now(tz_WA)
 
 url1 = base_url.format(
